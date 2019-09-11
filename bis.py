@@ -12,23 +12,16 @@ def bis(x3, x2, x1, c, a, b, tol):
             xm = abs((a+b)/2)
             if abs(f(xm)) <= tol:
                 return
-
             print('counter:', counter, 'xm:', xm, 'a:', a,
                   'f(a):', f(a), 'b:', b, 'f(b):', f(b))
-
-            # print(xm, f(a), f(b))
             if f(xm) < 0 and f(a) < 0:
                 a = xm
-                # print('1')
             elif f(xm) < 0 and f(b) < 0:
                 b = xm
-                # print('2')
             elif f(xm) > 0 and f(a) > 0:
                 a = xm
-                # print('3')
             elif f(xm) > 0 and f(b) > 0:
                 b = xm
-                # print('4')
 
 
 bis(1, -7.5, 12, 3, 4.5, 6, 0.05)
