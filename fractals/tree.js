@@ -20,10 +20,12 @@ function draw() {
 function branch(len) {
   line(0, 0, 0, -len);
   translate(0, -len);
-  if (len > 5) {
+  if (len > 2) {
     push();
     rotate(angle);
-    branch(len * 0.67);
+
+
+    branch(len * 0.7)
     pop();
     push();
     rotate(-angle);
